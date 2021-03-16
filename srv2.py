@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 import os
+from flask_restful import Api
 from data import db_session
 from data.jobs import Jobs
 from data.users import User
