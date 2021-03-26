@@ -38,6 +38,15 @@ def main():
     db_sess.add(jobs)
     db_sess.commit()
 
+    jobs = Jobs()
+    jobs.team_leader = 2
+    jobs.job = 'deployment of residential modules 1 and 2aaa'
+    jobs.work_size = 153
+    jobs.collaborators = '2'
+    jobs.is_finished = False
+    db_sess.add(jobs)
+    db_sess.commit()
+
     user = User()
     user.name = "Пользователь 1"
     user.about = "биография пользователя 1"
